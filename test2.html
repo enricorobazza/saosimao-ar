@@ -23,12 +23,19 @@
             }
           },
         });
+
+        window.addEventListener('click', function () {
+            var v = document.querySelector('#video');
+            v.play();
+        });
+
       </script>
 
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-                <video id="video" autoplay loop src="video/out.webm"></video>
+                <video id="video" autoplay webkit-playsinline loop src="video/out.webm">
+                </video>
             </a-assets>
             <a-marker preset="hiro" controlador>
                 <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
