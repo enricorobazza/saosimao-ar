@@ -46,11 +46,11 @@
                     rotation="-90 0 0"
                     position="0 0 0"
                     src="#video"
-                    material="alphaTest:'0.8'"
+                    material="shader: chromakey; src: #video; color: 0.1 0.9 0.2"
                     >
                 </a-video>
             </a-marker>
-            <a-entity camera material="shader: chromakey; src: #video; color: 0.1 0.9 0.2"></a-entity>
+            <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
